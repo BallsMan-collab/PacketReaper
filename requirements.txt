@@ -1,0 +1,6 @@
+# PacketReaper Dependencies
+scapy
+pyshark
+aircrack-ng
+colorama
+rich
