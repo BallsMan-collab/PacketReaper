@@ -1,0 +1,60 @@
+# Ignore Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+venv/
+.env/
+.venv/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+logs/
+
+# Ignore packet capture & output files
+captures/
+*.cap
+*.pcap
+*.pcapng
+*.csv
+*.json
+
+# Ignore compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.a
+
+# Ignore installation scripts if modified locally
+install_linux.sh
+install_mac.sh
+install_windows.bat
+install_vm.sh
+install_utm.sh
+
+# Ignore dependencies installed via package managers
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore security keys (if applicable)
+*.pem
+*.crt
+*.key
+*.der
+
+# Ignore custom wordlists (users may have their own)
+wordlists/custom_*
+
+# Ignore IDE/project files
+.vscode/
+.idea/
+*.iml
