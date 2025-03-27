@@ -7,40 +7,6 @@
 
 ---
 
-## **🔥 Final Version: Full Windows, macOS (Intel & Apple Silicon), Linux & VM Support!** 🚀💀  
-
-## **📂 Repository Structure**  
-\`\`\`bash
-PacketReaper/
-│── README.md            # Main documentation  
-│── LICENSE              # Open-source license (MIT recommended)  
-│── .gitignore           # Files to ignore in Git  
-│── requirements.txt     # Python dependencies (Scapy, Pyshark, etc.)  
-│── install_linux.sh     # Install script for Linux  
-│── install_mac.sh       # Install script for macOS  
-│── install_windows.bat  # Install script for Windows  
-│── install_vm.sh        # Install script for VirtualBox/VMware  
-│── install_utm.sh       # Install script for UTM (M1/M2/M3/M4 Macs)  
-│── packetreaper.py      # Main script  
-│  
-├── modules/             # Core functionalities  
-│   │── sniff.py         # Packet sniffing  
-│   │── handshake.py     # WPA2 handshake capture  
-│   │── crack.py         # WPA2 password cracking  
-│   │── monitor_check.py # Wi-Fi adapter check (Linux/macOS only)  
-│  
-├── utils/               # Helper scripts  
-│   │── banner.py        # ASCII art banner  
-│   │── logger.py        # Logging system  
-│   │── adapter_check.py # Detects Wi-Fi adapters  
-│  
-├── wordlists/           # Wordlists for WPA2 cracking  
-│  
-└── captures/            # Stores captured packets  
-\`\`\`
-
----
-
 ## **🛠 Features**  
 ✅ **Monitor Mode Check** – Detects if your adapter supports monitor mode & packet injection 🔍  
 ✅ **Packet Sniffing** – Capture and analyze Wi-Fi packets in real-time 📡  
