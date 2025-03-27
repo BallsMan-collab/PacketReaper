@@ -1,8 +1,43 @@
+
 # 💀 PacketReaper - The Ultimate Wi-Fi Pentesting Tool 🏴‍☠️  
 
-🚀 **PacketReaper** is a powerful **Wi-Fi pentesting tool** for **Windows, Linux, macOS (Intel & Apple Silicon), and Virtual Machines (VMware, VirtualBox, UTM)**. It allows ethical hackers to **analyze, capture, and crack** Wi-Fi networks.  
+🚀 **PacketReaper** is a powerful **Wi-Fi pentesting tool** for **Windows, Linux, macOS (Intel & Apple Silicon M1/M2/M3/M4), and Virtual Machines (VMware, VirtualBox, UTM)**. It allows ethical hackers to **analyze, capture, and crack** Wi-Fi networks.  
 
 ⚠️ **Disclaimer:** This tool is for **educational & security research purposes only**. **Do not use it on unauthorized networks!**  
+
+---
+
+## **🔥 Final Version: Full Windows, macOS (Intel & Apple Silicon), Linux & VM Support!** 🚀💀  
+
+## **📂 Repository Structure**  
+\`\`\`bash
+PacketReaper/
+│── README.md            # Main documentation  
+│── LICENSE              # Open-source license (MIT recommended)  
+│── .gitignore           # Files to ignore in Git  
+│── requirements.txt     # Python dependencies (Scapy, Pyshark, etc.)  
+│── install_linux.sh     # Install script for Linux  
+│── install_mac.sh       # Install script for macOS  
+│── install_windows.bat  # Install script for Windows  
+│── install_vm.sh        # Install script for VirtualBox/VMware  
+│── install_utm.sh       # Install script for UTM (M1/M2/M3/M4 Macs)  
+│── packetreaper.py      # Main script  
+│  
+├── modules/             # Core functionalities  
+│   │── sniff.py         # Packet sniffing  
+│   │── handshake.py     # WPA2 handshake capture  
+│   │── crack.py         # WPA2 password cracking  
+│   │── monitor_check.py # Wi-Fi adapter check (Linux/macOS only)  
+│  
+├── utils/               # Helper scripts  
+│   │── banner.py        # ASCII art banner  
+│   │── logger.py        # Logging system  
+│   │── adapter_check.py # Detects Wi-Fi adapters  
+│  
+├── wordlists/           # Wordlists for WPA2 cracking  
+│  
+└── captures/            # Stores captured packets  
+\`\`\`
 
 ---
 
@@ -24,38 +59,38 @@
    - Install **Wireshark**: [https://www.wireshark.org/](https://www.wireshark.org/)  
 
 2️⃣ **Clone the repo and install dependencies:**  
-```powershell
+\`\`\`powershell
 git clone https://github.com/YourUsername/PacketReaper.git
 cd PacketReaper
 install_windows.bat
-```
+\`\`\`
 
 3️⃣ **Run PacketReaper on Windows:**  
-```powershell
+\`\`\`powershell
 python packetreaper.py --mode sniff
-```
+\`\`\`
 
 ---
 
 ### **🐧 Linux Setup (Kali/ParrotOS/Ubuntu)**
-```bash
+\`\`\`bash
 git clone https://github.com/YourUsername/PacketReaper.git
 cd PacketReaper
 chmod +x install_linux.sh
 ./install_linux.sh
 python3 packetreaper.py --mode sniff
-```
+\`\`\`
 
 ---
 
 ### **🍏 macOS Setup (Intel & Apple Silicon)**
-```bash
+\`\`\`bash
 brew install python3 wireshark aircrack-ng
 git clone https://github.com/YourUsername/PacketReaper.git
 cd PacketReaper
 pip3 install -r requirements.txt
 python3 packetreaper.py --mode sniff
-```
+\`\`\`
 
 ---
 
@@ -74,24 +109,61 @@ python3 packetreaper.py --mode sniff
 - Go to **VM Settings > USB Devices > Add USB Wi-Fi Adapter**  
 
 **2️⃣ Install dependencies inside your VM:**  
-```bash
+\`\`\`bash
 git clone https://github.com/YourUsername/PacketReaper.git
 cd PacketReaper
 chmod +x install_vm.sh
 ./install_vm.sh
-```
+\`\`\`
 
 **3️⃣ Run PacketReaper inside the VM:**  
-```bash
+\`\`\`bash
 python3 packetreaper.py --mode sniff
-```
+\`\`\`
 
 ---
 
 ## **🛠 New `install_windows.bat` for Windows Support**
 🔥 **Create a file named `install_windows.bat` and paste this:**  
-````bat
+\`\`\`bat
 @echo off
 echo Installing PacketReaper dependencies...
 pip install -r requirements.txt
 echo Installation complete! Run 'python packetreaper.py --mode sniff'
+\`\`\`
+
+---
+
+## **🚀 Usage Examples**  
+📡 **Start sniffing packets:**  
+\`\`\`bash
+python packetreaper.py --mode sniff
+\`\`\`
+🔓 **Capture a WPA2 handshake:**  
+\`\`\`bash
+python packetreaper.py --mode capture --bssid AA:BB:CC:DD:EE:FF --channel 6
+\`\`\`
+💀 **Crack a handshake with a wordlist:**  
+\`\`\`bash
+python packetreaper.py --mode crack --file handshake.cap --wordlist rockyou.txt
+\`\`\`
+
+---
+
+## **🔓 License**  
+MIT License – Free to modify, contribute, and improve!  
+
+---
+
+### **💀 What’s New in This Update?**
+✅ **Added Full Windows Support!**  
+✅ **New `install_windows.bat` for easy Windows installation**  
+✅ **New setup instructions for Windows**  
+✅ **Updated README for macOS (Intel & M1/M2/M3/M4), Linux, and VMs**  
+
+🔥 **Now your repo supports everything: Windows, macOS, Linux, VMware, VirtualBox & Apple Silicon (M1/M2/M3/M4)!** 🚀😈  
+
+---
+
+### **💀 Ready to Reap Some Packets? Start Now! 🚀**  
+
