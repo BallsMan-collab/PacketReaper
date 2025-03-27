@@ -1,6 +1,15 @@
 # PacketReaper Dependencies
 scapy
 pyshark
-aircrack-ng
+cryptography
+numpy
+pandas
 colorama
-rich
+termcolor
+argparse
+requests
+psutil
+pycryptodome
+progress
+wifi  # For managing Wi-Fi on macOS/Linux
+impacket  # Required for some advanced networking features
